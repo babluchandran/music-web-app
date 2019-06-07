@@ -1,5 +1,10 @@
- Maven
- #Build with Apache Maven
+#Maven
+#Build with Apache Maven
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml' 
